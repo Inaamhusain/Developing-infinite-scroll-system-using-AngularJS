@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Infinite scroll in Angular js</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="lib/angular/angular.js"></script>
+    <script src="lib/scrollDirective/ng-infinite-scroll.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+	<script src="app/app.js"></script>
+  </head>
+  <body ng-app="infiniteScroll">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">Infinite scroll in Angular js</a>
+			</div>
+		</div>
+    </nav>
+	<div role="main" class="container theme-showcase" ng-controller="scrolling">
+		<div class="main-wrapper">
+			<div class="row" infinite-scroll='loadMore()'>
+				<div class="col-xs-6 col-md-3" ng-repeat='image in images'>
+					<a class="thumbnail">
+						<img src="http://placehold.it/350x250&text={{image}}" alt="{{image}}">
+					</a>
+				</div>
+			</div>
+	    </div>
+    </div>
+  </body>
+</html>
