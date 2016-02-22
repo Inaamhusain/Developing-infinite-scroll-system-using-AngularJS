@@ -1,5 +1,5 @@
-# Infinite-scroll-in-AngularJS-using-ngInfiniteScroll-directive
-Infinite scroll in AngularJS using ngInfiniteScroll directive
+# Developing-infinite-scroll-system-using-AngularJS
+Developing infinite scroll system using AngularJS
 
 ### See Tutorial here  - 
 http://code.ciphertrick.com/2016/02/22/infinite-scroll-angularjs/
